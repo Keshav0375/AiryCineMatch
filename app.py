@@ -24,7 +24,7 @@ def recommend(movie):
 similarity=pickle.load(open('similarity.pkl','rb'))
 movies_data=pickle.load(open('movies.pkl','rb'))
 movies_list=movies_data['title'].values
-st.title("movie recommendation system")
+st.title("AiryCineMatch")
 
 selected_movie_name=st.selectbox("search a movie",movies_list)
 
